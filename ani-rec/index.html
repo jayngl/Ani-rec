@@ -8,14 +8,19 @@
     <title>Ani-rec</title>
   </head>
   <body>
-    <div>
+    <img src="" alt="toggle themes" id="toggle-themes" />
+    <div class="flex justify-center items-center my-10">
       <input type="text" id="search-anime" class="border" />
-      <button id="search-btn" class="border">Recommend</button>
+      <button id="search-btn" class="border">Search</button>
     </div>
     <!-- Have order by rating  and year -->
     <!-- have side panel with genre -->
-    <div id="anime-container"></div>
+    <section class="flex justify-center items-center flex-col">
+      <h1 class="my-10 font-bold text-3xl">Top Anime</h1>
+      <div id="anime-container" class="anime-container"></div>
+    </section>
 
-    <script src="src/index.js"></script>
+    <script src="/node_modules/axios/dist/axios.min.js"></script>
+    <script type="module" src="src/index.js"></script>
   </body>
 </html>

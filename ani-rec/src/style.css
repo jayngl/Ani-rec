@@ -4,3 +4,60 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+body {
+  background-color: #121212;
+  color: white;
+}
+
+.anime-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: 400px;
+  gap: 16px;
+  padding: 0 30px;
+}
+
+.anime-container > img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.anime-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.anime-card > h1 {
+  margin: 12px 0;
+}
+
+@media screen and (min-width: 539px) {
+  .anime-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 400px;
+    gap: 16px;
+  }
+}
+
+@media screen and (min-width: 787px) {
+  .anime-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 400px;
+    gap: 10px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .anime-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: 400px;
+    gap: 16px;
+  }
+}
